@@ -1,0 +1,116 @@
+.home {
+  position: relative;
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  z-index: 1;
+}
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../img/fundo.png);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+header .navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem 0.9rem;
+  justify-content: space-between;
+}
+header .section-navigation {
+  display: none;
+}
+header .logo-navigation img {
+  width: 85px;
+  margin-right: 0.875rem;
+}
+header .navigation .mobile-menu-icon button {
+  border: transparent;
+  position: relative;
+  padding: 0.3rem;
+  font-size: 25px;
+  color: var(--parchment--);
+  background-color: transparent;
+  margin: 0 0.575rem;
+}
+
+header .navigation .mobile-menu-icon .close-menu {
+  display: none;
+}
+.open-menu.hide {
+  display: none;
+}
+.close-menu.show {
+  display: block !important;
+}
+
+header .mobile-menu {
+  display: none;
+  height: 355px;
+  flex-direction: column;
+  background-color: var(--dark-gray--);
+  transition: all 0.3s ease-in-out;
+}
+header .mobile-menu.active {
+  display: flex;
+}
+header .mobile-menu ul {
+  list-style: none;
+}
+header .mobile-menu ul > li {
+  padding: 1.225rem;
+  border-bottom: 1px solid var(--medium-gray--);
+  width: 492px;
+}
+header .mobile-menu ul > li a {
+  text-decoration: none;
+  color: var(--medium-gray--);
+  transition: all 0.2s ease-in-out;
+}
+
+header .mobile-menu ul > li a:hover {
+  color: var(--white--);
+}
+header .mobile-menu .nav-btn-mobile a {
+  text-decoration: none;
+  color: var(--white--);
+}
+
+header .nav-btn-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+}
+header .mobile-menu .nav-btn-mobile {
+  width: 85%;
+  margin-top: 0.6rem;
+  background-color: var(--parchment--);
+  color: var(--white--);
+  text-align: center;
+  padding: 0.8rem 0.1rem;
+  border-radius: 8px;
+}
+
+header .mobile-menu .nav-btn-mobile:hover {
+  background-color: var(--parchment-op81--);
+  font-size: 18px;
+  cursor: pointer;
+}
