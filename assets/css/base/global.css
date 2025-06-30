@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root{
+  --white: #FFFFFF;
+  --black: #000000;
+  --parchment: #E9C664;
+  --parchment-op91: rgba(233, 198, 100, 0.9137); /* E9C664 com 91.37% de opacidade */
+  --dark-gray: #212121;
+  --medium-gray: #979797;
+  --tan: #BE9359;
+}
+
+html {
+  scroll-behavior: smooth;
+}
