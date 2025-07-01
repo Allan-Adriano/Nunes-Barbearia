@@ -5,6 +5,7 @@
   overflow: hidden;
   z-index: 1;
 }
+
 .home::before {
   content: "";
   position: absolute;
@@ -33,60 +34,103 @@ header .navigation {
   padding: 1rem 0.9rem;
   justify-content: space-between;
 }
+
 header .section-navigation {
   display: none;
 }
+
 header .logo-navigation img {
   width: 85px;
   margin-right: 0.875rem;
 }
+
 header .navigation .mobile-menu-icon button {
-  border: transparent;
   position: relative;
+  border: transparent;
   padding: 0.3rem;
   font-size: 25px;
   color: var(--parchment--);
   background-color: transparent;
+  cursor: pointer;
   margin: 0 0.575rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .navigation .mobile-menu-icon .open-menu,
+header .navigation .mobile-menu-icon .close-menu {
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header .navigation .mobile-menu-icon .open-menu {
+  opacity: 1;
 }
 
 header .navigation .mobile-menu-icon .close-menu {
-  display: none;
+  transition: opacity 0.6s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
 }
-.open-menu.hide {
-  display: none;
+
+header .navigation .mobile-menu-icon .open-menu.hide {
+  opacity: 0;
 }
-.close-menu.show {
-  display: block !important;
+
+header .navigation .mobile-menu-icon .close-menu.show {
+  opacity: 1;
 }
 
 header .mobile-menu {
-  display: none;
-  height: 355px;
+  width: 100%;
+  max-height: 0;
+  margin-top: -27px;
+  display: flex;
+  overflow: hidden;
   flex-direction: column;
   background-color: var(--dark-gray--);
-  transition: all 0.3s ease-in-out;
+  transition: max-height 0.7s ease-out, opacity 0.4s ease-out;
+  opacity: 0;
+  position: absolute;
+  z-index: 1000;
 }
+
 header .mobile-menu.active {
-  display: flex;
+  max-height: 500px;
+  opacity: 1;
 }
+
 header .mobile-menu ul {
   list-style: none;
+  width: 100%;
 }
+
 header .mobile-menu ul > li {
   padding: 1.225rem;
   border-bottom: 1px solid var(--medium-gray--);
-  width: 492px;
+  width: 100%;
 }
-header .mobile-menu ul > li a {
+
+header .mobile-menu ul > li > a {
   text-decoration: none;
   color: var(--medium-gray--);
   transition: all 0.2s ease-in-out;
+  display: block;
 }
 
 header .mobile-menu ul > li a:hover {
   color: var(--white--);
 }
+
 header .mobile-menu .nav-btn-mobile a {
   text-decoration: none;
   color: var(--white--);
@@ -99,9 +143,10 @@ header .nav-btn-mobile {
   margin: auto;
   transition: all 0.3s ease-in-out;
 }
+
 header .mobile-menu .nav-btn-mobile {
   width: 85%;
-  margin-top: 0.6rem;
+  margin: 0.6rem auto 1rem auto;
   background-color: var(--parchment--);
   color: var(--white--);
   text-align: center;
@@ -111,6 +156,83 @@ header .mobile-menu .nav-btn-mobile {
 
 header .mobile-menu .nav-btn-mobile:hover {
   background-color: var(--parchment-op81--);
-  font-size: 18px;
   cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  header .logo-navigation img {
+    margin-top: 10px;
+    width: 110px;
+    cursor: pointer;
+  }
+
+  header .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    height: 50px;
+    margin: 20px auto 0 auto;
+    padding: 1rem 2rem;
+  }
+
+  header .navigation .mobile-menu-icon {
+    display: none;
+  }
+
+  header .section-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    position: relative;
+  }
+
+  header .section-navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+  }
+
+  header .section-navigation ul > li {
+    margin: 0 1rem;
+  }
+
+  header .section-navigation ul > li > a {
+    text-decoration: none;
+    color: var(--medium-gray--);
+    font-size: 1.1rem;
+    transition: color 0.4s ease-in-out;
+  }
+
+  header .section-navigation ul > li > a:hover {
+    color: var(--white--);
+  }
+
+  header .section-navigation .btn-section-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--parchment--);
+    width: 191px;
+    height: 50px;
+    position: absolute;
+    right: 15px;
+    transition: 0.5s ease, color 0.3s ease;
+  }
+  header .section-navigation .btn-section-nav a {
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--white--);
+    font-weight: 500;
+  }
+  header .section-navigation .btn-section-nav:hover {
+    background-color: var(--parchment--);
+    color: black;
+  }
 }
