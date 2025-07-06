@@ -38,6 +38,9 @@ header .navigation {
 header .section-navigation {
   display: none;
 }
+header .btn-section-nav {
+  display: none;
+}
 
 header .logo-navigation img {
   width: 85px;
@@ -160,6 +163,12 @@ header .mobile-menu .nav-btn-mobile:hover {
 }
 
 @media (min-width: 992px) {
+  header .navigation .mobile-menu-icon {
+    display: none;
+  }
+  header .logo-navigation {
+    flex: 0 0 auto;
+  }
   header .logo-navigation img {
     margin-top: 10px;
     width: 110px;
@@ -168,8 +177,6 @@ header .mobile-menu .nav-btn-mobile:hover {
 
   header .navigation {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     max-width: 1440px;
     height: 50px;
@@ -177,25 +184,18 @@ header .mobile-menu .nav-btn-mobile:hover {
     padding: 1rem 2rem;
   }
 
-  header .navigation .mobile-menu-icon {
-    display: none;
-  }
-
   header .section-navigation {
     display: flex;
-    align-items: center;
+    flex: 1 1 auto;
     justify-content: center;
-    flex-grow: 1;
-    position: relative;
   }
 
   header .section-navigation ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    gap: 1.5rem;
     margin: 0;
     padding: 0;
-    flex-grow: 1;
   }
 
   header .section-navigation ul > li {
@@ -213,25 +213,26 @@ header .mobile-menu .nav-btn-mobile:hover {
     color: var(--white--);
   }
 
-  header .section-navigation .btn-section-nav {
+  header .btn-section-nav {
     display: flex;
     align-items: center;
     justify-content: center;
     border: 2px solid var(--parchment--);
-    width: 191px;
+    width: 180px;
     height: 50px;
-    position: absolute;
-    right: 15px;
+    margin-left: auto;
     transition: 0.5s ease, color 0.3s ease;
   }
-  header .section-navigation .btn-section-nav a {
+
+  header .btn-section-nav a {
     align-items: center;
     justify-content: center;
     text-decoration: none;
     color: var(--white--);
     font-weight: 500;
   }
-  header .section-navigation .btn-section-nav:hover {
+
+  header .btn-section-nav:hover {
     background-color: var(--parchment--);
     color: black;
   }
