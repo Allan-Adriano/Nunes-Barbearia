@@ -8,7 +8,6 @@ const menuActive = () => {
   openMenuIcon.classList.toggle("hide");
   closeMenuIcon.classList.toggle("show");
 };
-
 window.addEventListener('scroll', function() {
   const header = document.querySelector('header');
   const isDesktop = window.innerWidth >= 992;
@@ -19,7 +18,6 @@ window.addEventListener('scroll', function() {
       header.classList.remove('scrolled');
   }
 });
-
 
 window.addEventListener('resize', function() {
   const header = document.querySelector('header');
