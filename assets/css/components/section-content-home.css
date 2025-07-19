@@ -3,15 +3,15 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 0;
 }
 
 .content-home img {
-  margin-top: -90px;
-  width: 600px;
+  width: 450px;
+  margin-bottom: 3rem;
 }
 
 .content-home h1 {
+  text-align: center;
   font-family: "Abril Fatface", serif;
   color: var(--tan--);
   margin-top: -20px;
@@ -28,14 +28,34 @@
   margin-bottom: 2.5rem;
 }
 
-.content-home .btn-content-home a {
-  color: var(--white--);
+.content-home-text {
   display: flex;
-  align-items: center;
+  justify-content: center;
   flex-direction: column;
+  align-items: center;
+}
+
+.btn-content-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.btn-about, .btn-Book-appointment {
   width: 340px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.btn-about a, .btn-Book-appointment a {
+  display: block;
   padding: 0.9rem 0.755rem;
+  text-align: center;
   text-decoration: none;
+  color: var(--white--);
+  width: 100%;
 }
 
 .content-home .btn-content-home .btn-about {
@@ -55,4 +75,59 @@
 
 .content-home .btn-content-home .btn-Book-appointment:hover {
   background-color: var(--tan--);
+}
+
+@media (min-width: 992px) {
+  .content-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem auto 0 auto;
+    max-width: 1440px;
+  }
+
+  .content-home img {
+    width: 550px;
+    height: auto;
+    margin-right: 150px;
+  }
+
+  .content-home-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 600px;
+  }
+
+  .content-home-text h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    text-align: left;
+    margin-bottom: 20px;
+    width: auto;
+  }
+  .content-home-text p {
+    font-size: 1.1rem;
+    text-align: left;
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+  .btn-content-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .btn-about, .btn-Book-appointment {
+    width: 300px;
+  }
+
+  .btn-Book-appointment {
+    margin-top: -25px;
+    margin-right: 2rem;
+  }
 }

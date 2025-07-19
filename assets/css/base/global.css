@@ -8,12 +8,17 @@
   --dark-gray--: #212121;
   --medium-gray--: #979797;
   --tan--: #be9359;
-} 
+}
 
 html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   font-family: "Inter", sans-serif;
+}
+
+h1,h2,h3,h4,h5,p {
+  margin: 0;
+  padding: 0;
 }
