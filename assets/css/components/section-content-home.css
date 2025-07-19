@@ -1,0 +1,58 @@
+.content-home {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+}
+
+.content-home img {
+  margin-top: -90px;
+  width: 600px;
+}
+
+.content-home h1 {
+  font-family: "Abril Fatface", serif;
+  color: var(--tan--);
+  margin-top: -20px;
+  font-size: 27px;
+  margin-bottom: 12px;
+}
+
+.content-home p {
+  color: var(--white--);
+  font-family: "Inter", sans-serif;
+  font-size: 19px;
+  text-align: center;
+  margin: 9px;
+  margin-bottom: 2.5rem;
+}
+
+.content-home .btn-content-home a {
+  color: var(--white--);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 340px;
+  padding: 0.9rem 0.755rem;
+  text-decoration: none;
+}
+
+.content-home .btn-content-home .btn-about {
+  border: 1px solid var(--parchment-op81--);
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 1.5rem;
+}
+
+.content-home .btn-content-home .btn-Book-appointment {
+  transition: all 0.5s ease-in-out;
+  background-color: var(--parchment--);
+}
+
+.content-home .btn-content-home .btn-about:hover {
+  background-color: var(--parchment--);
+}
+
+.content-home .btn-content-home .btn-Book-appointment:hover {
+  background-color: var(--tan--);
+}
