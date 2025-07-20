@@ -43,13 +43,15 @@
   width: 100%;
 }
 
-.btn-about, .btn-Book-appointment {
+.btn-about,
+.btn-Book-appointment {
   width: 340px;
   max-width: 90%;
   margin: 0 auto;
 }
 
-.btn-about a, .btn-Book-appointment a {
+.btn-about a,
+.btn-Book-appointment a {
   display: block;
   padding: 0.9rem 0.755rem;
   text-align: center;
@@ -106,7 +108,7 @@
     line-height: 1.1;
     text-align: left;
     margin-bottom: 20px;
-    width: auto;
+    width: 400px;
   }
   .content-home-text p {
     font-size: 1.1rem;
@@ -122,7 +124,8 @@
     gap: 20px;
   }
 
-  .btn-about, .btn-Book-appointment {
+  .btn-about,
+  .btn-Book-appointment {
     width: 300px;
   }
 
