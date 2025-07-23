@@ -1,0 +1,71 @@
+.section-services {
+  background: linear-gradient(
+    120deg,
+    var(--black--) 0%,
+    var(--dark-gray--) 75%,
+    var(--black--) 100%
+  );
+  overflow: hidden;
+}
+
+.section-services h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: var(--white--);
+  letter-spacing: 3px;
+}
+.card-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  width: 350px;
+  height: 360px;
+  border: 1px solid var(--parchment--);
+  margin-bottom: 1rem;
+}
+.beard img {
+  width: 35%;
+  margin-bottom: -4rem;
+}
+
+.beard .card-text {
+  padding-top: 7rem;
+}
+
+.card h3 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: var(--white--);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card p {
+  color: var(--white--);
+  font-size: 1.1rem;
+}
+.card img {
+  margin-top: -10px;
+}
+@media (min-width: 992px) {
+  .card-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+}
