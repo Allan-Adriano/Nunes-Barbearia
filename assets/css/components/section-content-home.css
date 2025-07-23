@@ -80,6 +80,9 @@
 }
 
 @media (min-width: 992px) {
+  .home .content-home {
+    margin-top: 10rem;
+  }
   .content-home {
     display: flex;
     flex-direction: row;
