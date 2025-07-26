@@ -1,10 +1,5 @@
 .section-services {
-  background: linear-gradient(
-    120deg,
-    var(--black--) 0%,
-    var(--dark-gray--) 75%,
-    var(--black--) 100%
-  );
+  background: linear-gradient(120deg,var(--black--) 0%,var(--dark-gray--) 75%,var(--black--) 100%);
   overflow: hidden;
 }
 
@@ -29,7 +24,7 @@
   text-align: center;
   margin: 0 auto;
   width: 350px;
-  height: 360px;
+  height: 340px;
   border: 1px solid var(--parchment--);
   margin-bottom: 1rem;
 }
@@ -52,7 +47,8 @@
 
 .card p {
   color: var(--white--);
-  font-size: 1.1rem;
+  font-size: 1rem;
+  margin: 10px;
 }
 .card img {
   margin-top: -10px;
@@ -63,8 +59,8 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    gap: 20px;
-    max-width: 1600px;
+    gap: 10px;
+    max-width: 1440px;
     margin: 0 auto;
     flex-direction: row;
   }
