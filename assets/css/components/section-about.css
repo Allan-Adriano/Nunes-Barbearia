@@ -1,0 +1,30 @@
+.about {
+  background-color: var(--dark-gray--);
+  color: var(--white--);
+}
+
+.about-content h1 {
+  letter-spacing: 3px;
+  text-align: center;
+  padding-top: 2.2rem;
+  margin-bottom: 1.2rem;
+  font-size: 2rem;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, var(--parchment--), var(--tan--));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-content p {
+  text-align: left;
+  font-size: 1.1rem;
+  margin: 0px 10px 0 10px;
+  padding: 10px;
+  line-height: 23px;
+}
+
+.about-content {
+  padding-bottom: 5rem;
+}

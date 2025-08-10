@@ -5,8 +5,8 @@
 
 .section-services h1 {
   text-align: center;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 4rem;
   font-size: 2rem;
   color: var(--white--);
   letter-spacing: 3px;
@@ -23,8 +23,8 @@
   flex-direction: column;
   text-align: center;
   margin: 0 auto;
-  width: 350px;
-  height: 340px;
+  width: 310px;
+  height: 320px;
   border: 1px solid var(--parchment--);
   margin-bottom: 1rem;
 }
@@ -41,13 +41,13 @@
   margin-top: 10px;
   margin-bottom: 15px;
   color: var(--white--);
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 
 .card p {
   color: var(--white--);
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: 10px;
 }
 .card img {
@@ -63,5 +63,8 @@
     max-width: 1440px;
     margin: 0 auto;
     flex-direction: row;
+  }
+  .card:hover {
+    cursor: pointer;
   }
 }
