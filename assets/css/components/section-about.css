@@ -3,7 +3,7 @@
   color: var(--white--);
 }
 
-.about-content h1 {
+.about-text {
   letter-spacing: 3px;
   text-align: center;
   padding-top: 2.2rem;
@@ -27,4 +27,24 @@
 
 .about-content {
   padding-bottom: 5rem;
+}
+
+@media (min-width: 992px) {
+  .about {
+    display: flex;
+    height: 1024px;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .about-img {
+    flex: 1;
+    width: 50%;
+  }
+  .about-content {
+    width: 40%;
+    border: 1px solid blue;
+  }
+  .about-content h1 {
+  }
 }

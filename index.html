@@ -14,7 +14,7 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="home">
+    <section class="home" id="section-home">
       <header>
         <nav class="navigation">
           <div class="logo-navigation">
@@ -22,7 +22,7 @@
           </div>
           <div class="section-navigation">
             <ul>
-              <li><a href="">Home</a></li>
+              <li><a href="#section-home">Home</a></li>
               <li><a href="#section-services">Serviços</a></li>
               <li><a href="#section-about">Sobre Nós</a></li>
               <li><a href="#nossas-unidades">Nossas Unidades</a></li>
@@ -163,11 +163,10 @@
         </div>
       </section>
     </main>
-
     <!--Section-about-->
     <section class="about" id="section-about">
       <div class="about-content">
-        <h1>SOBRE <span class="gradient-text">NÓS</span></h1>
+        <h1 class="about-text">SOBRE <span class="gradient-text">NÓS</span></h1>
         <p>
           A Nunes Barbearia, fundada em 2017, rapidamente se tornou um ponto de
           referência para quem procura mais que um corte. O espaço une a
@@ -187,6 +186,45 @@
           mantendo sua essência enquanto se adapta e inova, consolidando-se como
           uma referência em estilo e cuidado.
         </p>
+      </div>
+      <div class="about-img">
+        <div class="slider">
+          <div class="slides">
+            <!--Radio buttons-->
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <!--Fim radio-->
+
+            <!--Slide img-->
+            <div class="slide frist">
+              <img src="assets/img/image-1.jpg" alt="imagem 1" />
+            </div>
+
+            <div class="slide">
+              <img src="assets/img/image-2.jpg" alt="imagem 2" />
+            </div>
+
+            <div class="slide">
+              <img src="assets/img/image-3.jpg" alt="imagem 3" />
+            </div>
+            <!--Fim img-->
+            <!--Navigation auto-->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+            </div>
+          </div>
+
+          <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+          </div>
+        </div>
+
+        <!--About-->
       </div>
     </section>
 

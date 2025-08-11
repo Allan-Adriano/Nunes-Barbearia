@@ -54,6 +54,9 @@
   margin-top: -10px;
 }
 @media (min-width: 992px) {
+  .section-services {
+    height: 1024px;
+  }
   .card-services {
     display: flex;
     flex-wrap: wrap;

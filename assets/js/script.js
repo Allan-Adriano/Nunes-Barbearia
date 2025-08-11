@@ -9,7 +9,16 @@ const menuActive = () => {
   closeMenuIcon.classList.toggle("show");
 };
 
-/*navigation bar effect for larger screens*/
+//Closes the menu when the user clicks
+document.querySelectorAll(".mobile-menu a").forEach((link) => {
+  link.addEventListener("click", (e) => {
+    menuMobile.classList.remove("active");
+    openMenuIcon.classList.remove("hide");
+    closeMenuIcon.classList.remove("show");
+  });
+});
+
+//navigation bar effect for larger screens
 
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
@@ -29,20 +38,15 @@ window.addEventListener("resize", function () {
   }
 });
 
-document.querySelectorAll(".mobile-menu a").forEach((link) => {
-  link.addEventListener("click", (e) => {
-    // Fecha o menu
-    menuMobile.classList.remove("active");
-    openMenuIcon.classList.remove("hide");
-    closeMenuIcon.classList.remove("show");
+//automatic slideShow effect
 
-    // Rola até a seção clicada (caso queira animação suave)
-    const targetId = link.getAttribute("href");
-    if (targetId.startsWith("#")) {
-      e.preventDefault();
-      document.querySelector(targetId).scrollIntoView({
-        behavior: "smooth",
-      });
-    }
-  });
-});
+let count = 1;
+document.getElementById("radio1").checked = true;
+setInterval(function () {
+  nextImage();
+}, 5000);
+function nextImage() {
+  count++;
+  if (count > 3) count = 1;
+  document.getElementById("radio" + count).checked = true;
+}
