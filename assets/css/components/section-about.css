@@ -28,11 +28,14 @@
 .about-content {
   padding-bottom: 5rem;
 }
+.about-img {
+  margin-top: -40px;
+}
 
 @media (min-width: 992px) {
   .about {
     display: flex;
-    height: 1024px;
+    height: 1000px;
     align-items: center;
     gap: 2rem;
     padding: 2rem;
@@ -43,8 +46,13 @@
   }
   .about-content {
     width: 40%;
-    border: 1px solid blue;
+    margin-left: 30px;
   }
+
   .about-content h1 {
+    margin-top: -20px;
+    font-size: 3rem;
+    padding-left: 22px;
+    text-align: left;
   }
 }

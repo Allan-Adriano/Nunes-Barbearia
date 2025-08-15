@@ -187,7 +187,8 @@ header .mobile-menu .nav-btn-mobile:hover {
   header .section-navigation {
     display: flex;
     flex: 1 1 auto;
-    justify-content: center;
+    justify-content: flex-end;
+    margin-right: 30px;
   }
 
   header .section-navigation ul {
