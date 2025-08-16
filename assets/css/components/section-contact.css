@@ -1,0 +1,110 @@
+.section-contact {
+  background: linear-gradient(45deg, var(--black--), var(--dark-gray--));
+}
+
+.container-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 17px 0 17px;
+}
+
+.container-contact h2 {
+  margin: 2rem 0 1rem 0;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: var(--white--);
+  text-align: center;
+}
+
+.container-contact p {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 22px;
+  color: var(--white--);
+}
+.contact-info {
+  margin-top: 4rem;
+  background-color: var(--very-dark-gray--);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.info-item {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin: 2rem 2rem 2rem 1.2rem;
+}
+
+.info-top {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.info-item a {
+  text-decoration: none;
+}
+.info-item p:hover {
+  color: var(--parchment-op81--);
+  transition: all ease-in 0.2s;
+}
+
+.info-item h3 {
+  font-family: sans-serif;
+  color: var(--white--);
+  margin-left: 10px;
+}
+.info-item p {
+  margin-top: 5px;
+  text-align: left;
+  margin-left: 35px;
+}
+.info-item span {
+  font-size: 1rem;
+  margin-top: 10px;
+  text-align: left;
+  margin-left: 35px;
+  color: var(--white--);
+}
+
+.btn-schedule-time {
+  padding: 10px;
+  width: 70%;
+  margin: 3rem 2rem 2rem 2rem;
+  background-color: var(--parchment-op81--);
+  font-family: "Abril Fatface", serif;
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: var(--white--);
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-schedule-time a {
+  text-decoration: none;
+  color: var(--white--);
+}
+
+.btn-schedule-time:hover {
+  box-shadow: rgba(var(--parchment-rgb--), 0.3) 0px 13px 13px -8px;
+}
+
+.fa-arrow-right {
+  margin-left: 5px;
+  color: var(--white--);
+}
+
+.location {
+  margin-top: 20px;
+  width: 360px;
+  height: 300px;
+}
+
+.location iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 15px;
+}
