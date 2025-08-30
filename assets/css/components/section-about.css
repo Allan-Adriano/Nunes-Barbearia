@@ -33,6 +33,13 @@
 }
 
 @media (min-width: 992px) {
+  .about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
   .about {
     display: flex;
     height: 1000px;

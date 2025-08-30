@@ -29,6 +29,7 @@
   background-color: var(--very-dark-gray--);
   border-radius: 10px;
   cursor: pointer;
+  padding: 10px 0 10px 0;
 }
 
 .info-item {
@@ -48,7 +49,7 @@
 }
 .info-item p:hover {
   color: var(--parchment-op81--);
-  transition: all ease-in 0.2s;
+  transition: all ease-in 0.3s;
 }
 
 .info-item h3 {
@@ -67,6 +68,7 @@
   text-align: left;
   margin-left: 35px;
   color: var(--white--);
+  line-height: 30px;
 }
 
 .btn-schedule-time {
@@ -78,7 +80,7 @@
   font-size: 1.2rem;
   margin-right: 10px;
   color: var(--white--);
-  border-radius: 8px;
+  border-radius: 5px;
   transition: all 0.5s ease-in-out;
 }
 
@@ -107,4 +109,26 @@
   height: 100%;
   border: none;
   border-radius: 15px;
+}
+@media (min-width: 992px) {
+  .contact-content {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .location {
+    margin-top: 70px;
+    height: 400px;
+    width: 640px;
+  }
+  .contact-info {
+    margin-right: 90px;
+    width: 600px;
+    height: 500px;
+  }
+  .text-contact {
+    text-align: initial;
+    width: 880px;
+  }
 }
