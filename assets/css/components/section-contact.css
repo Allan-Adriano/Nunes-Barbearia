@@ -1,5 +1,6 @@
 .section-contact {
   background: linear-gradient(45deg, var(--black--), var(--dark-gray--));
+  padding-bottom: 24px;
 }
 
 .container-contact {

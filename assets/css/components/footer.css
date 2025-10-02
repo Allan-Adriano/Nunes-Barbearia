@@ -53,11 +53,8 @@ footer .fa-arrow-right {
 .footer-contact h2 {
   margin-left: 13px;
   letter-spacing: 2px;
-  font-size: 26px;
   margin-top: 13px;
-}
-
-.footer-contact {
+  font-weight: 550;
 }
 
 .info-top-footer {
@@ -92,4 +89,25 @@ footer hr {
 .developer {
   color: var(--medium-gray--);
   font-size: 12px;
+}
+@media (min-width: 992px) {
+  footer {
+    max-width: 1440px;
+    display: flex;
+    margin: 0 auto;
+  }
+  .footer-content {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  .link-footer {
+    margin-top: 40px;
+  }
+  .footer-contact {
+    margin-top: 23px;
+  }
+  .section-header-footer {
+  }
 }
